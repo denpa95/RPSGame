@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: monospace;
+    color: tomato;
+}
+h2 {
+    font-family: monospace;
+    color: tomato;
+}
+
+button {
+    font-family: monospace;
+    color: tomato;
+    border-color: tomato;
+    background-color: black;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 150px;
+    margin: 20px;
+    cursor: pointer;
+}
+.button-content {
+    display: inline-block;
+    margin-top: 50px;
+}
+body {
+    text-align: center;
+}
+.js-score {
+    font-family: monospace;
+    color: tomato;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.move-icon {
+    height: 50px;
+}
+
+.move-button {
+    background-color: transparent;
+    border: 3px dashed tomato;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-bottom: 40px;
+}
+
+.display-move {
+    height: 30px;
+}

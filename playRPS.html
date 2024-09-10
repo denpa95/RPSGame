@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" href="../RSPGame/rps.css">
+    </head>
+    <body>
+        <h1>Welcome! Play rock, paper, scissors with the computer</h1>
+        <h2>Choose your move!</h2>
+        <section class="button-content">
+            <!--User selects rock by clicking button below-->
+            <button onclick="
+                pickComputerMove();
+                gameplay('rock');
+                displayScore('rock');
+            " class="move-button">
+                <img src="../images/rock-emoji.png" class="move-icon">
+            </button>
+
+            <!--User selects paper by clicking button below-->
+            <button onclick="
+                pickComputerMove()
+                gameplay('paper');
+                displayScore('paper');
+            " class="move-button">
+                <img src="../images/paper-emoji.png" class="move-icon">
+            </button>
+
+            <!--User selects scissors by clicking button below-->
+            <button onclick="
+                pickComputerMove();
+                gameplay('scissors');
+                displayScore('scissors');
+            " class="move-button">
+                <img src="../images/scissors-emoji.png" class="move-icon">
+            </button> 
+        </section>
+        <section>
+            <button onclick="
+                scores.compScore = 0;
+                scores.userScore = 0;
+                displayScore('reset');
+            ">Reset scores</button>
+
+            <p class="js-score">Let's start</p>
+        </section>
+        
+        <script src="rps.js"></script>
+    </body>
+</html>
